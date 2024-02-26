@@ -44,7 +44,7 @@ subprojects {
 
     plugins.withId('dev.architectury.loom') {
         loom {
-            accessWidenerPath = project(":common").file("src/main/resources/examplemod.accesswidener")
+            accessWidenerPath = project(":common").file("src/main/resources/${mod_id}.accesswidener")
         }   
     }
 

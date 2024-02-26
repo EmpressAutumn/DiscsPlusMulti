@@ -15,24 +15,24 @@
         "sources": "https://github.com/FabricMC/fabric-example-mod"
     },
     "license": "${mod_license}",
-    "icon": "assets/modid/icon.png",
+    "icon": "assets/${mod_id}/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+          "com.atom596.discsplus.DiscsPlusFabric"
         ],
         "client": [
-            "com.example.examplemod.ExampleModClient"
+            "com.atom596.discsplus.DiscsPlusFabricClient"
         ],
         "fabric-datagen": [
-            "com.example.examplemod.ExampleModDatagen"
+            "com.atom596.discsplus.DiscsPlusDatagen"
         ]
     },
     "mixins": [
         "${mod_id}.mixins.json",
         "${mod_id}.fabric.mixins.json"
     ],
-    "accessWidener": "examplemod.accesswidener",
+    "accessWidener": "${mod_id}.accesswidener",
     "depends": {
         "fabricloader": ">=0.14",
         "fabric": "*",
@@ -40,4 +40,3 @@
         "java": ">=17"
     }
 }
-  
